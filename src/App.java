@@ -26,6 +26,7 @@ public class App {
         do{
         System.out.println("A - Add Item \nD - Delete Item\n P - Print List\n Q - Quit Program");
         String temp = scan.nextLine();
+        temp = temp.toUpperCase();
         if (gamemap.containsKey(temp)) {
             gamemap.get(temp).run();
         }else{
